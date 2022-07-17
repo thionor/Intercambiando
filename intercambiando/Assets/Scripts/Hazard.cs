@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class Hazard : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision colllision) {
-        Destroy(gameObject);
+    Vector3 rotation;
+
+    private void Start() {
+        var xRotation = Random.Range(0.5f, 1.5f);
+        rotation = new Vector3(-xRotation, 0);
+    }
+
+    private void Update() {
+        transform.Rotate(rotation);
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+        if(!collision.gameObject.CompareTag("Hazard")) {
+            Destroy(gameObject);
+        }
     }
 }

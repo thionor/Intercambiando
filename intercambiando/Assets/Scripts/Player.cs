@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter(Collision colission)
     {
         if(colission.gameObject.CompareTag("Hazard")) {
+            GameManager.GameOver();
             Destroy(gameObject);
         }
     }
