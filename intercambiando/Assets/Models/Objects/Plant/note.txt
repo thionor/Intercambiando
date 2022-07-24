@@ -1,0 +1,2 @@
+If you use the pump map you might need to adjust the strength according to your software and your preference.
+The render previews were made in blender using the pump strenght of 0.1
