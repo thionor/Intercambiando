@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Chapter1/1stCutscene.unity
+    guid: a748163ca921bde44b1aca7e70afbe3f
+  - enabled: 1
+    path: Assets/Scenes/Levels/chapter1.unity
+    guid: 89978ac08bb4659458c3920c37f92e8b
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 74ecd2bc91553c241a6cb83d597a7a7c,
       type: 2}
